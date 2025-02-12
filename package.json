@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:schematics": "tsc -p tools/schematics/tsconfig.schematics.json && cpx \"tools/schematics/collection.json\" \"dist/my-funny-lib/schematics\" && cpx \"tools/schematics/ng-add/files/**\" \"dist/my-funny-lib/schematics/ng-add/files\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -23,6 +24,7 @@
     "@ng-doc/builder": "19.1.0",
     "@ng-doc/core": "19.1.0",
     "@ng-doc/ui-kit": "19.1.0",
+    "cpx": "^1.5.0",
     "my-funny-lib": "file:dist/my-funny-lib",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
