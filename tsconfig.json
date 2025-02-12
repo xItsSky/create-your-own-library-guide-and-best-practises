@@ -11,6 +11,17 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
+    "paths": {
+      "@ng-doc/generated": [
+        "./ng-doc/documentation/index.ts"
+      ],
+      "@ng-doc/generated/*": [
+        "./ng-doc/documentation/*"
+      ],
+      "my-funny-lib": [
+        "./dist/my-funny-lib"
+      ]
+    },
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
