@@ -19,10 +19,14 @@
     "@angular/platform-browser": "^19.1.5",
     "@angular/platform-browser-dynamic": "^19.1.5",
     "@angular/router": "^19.1.5",
+    "@ng-doc/app": "19.1.0",
+    "@ng-doc/builder": "19.1.0",
+    "@ng-doc/core": "19.1.0",
+    "@ng-doc/ui-kit": "19.1.0",
+    "my-funny-lib": "file:dist/my-funny-lib",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.15.0",
-    "my-funny-lib": "file:dist/my-funny-lib"
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.1.5",

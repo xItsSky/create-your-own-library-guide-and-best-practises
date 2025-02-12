@@ -16,9 +16,13 @@ export class FunnyProgressBarComponent implements AfterViewInit {
   backgroundColor = input<string>('#05043e');
 
   effect = effect(() => {
-    Promise.resolve().then(() => {
+    if(this.progressRef) {
       this.#renderer.setStyle(this.progressRef.nativeElement, 'width', `${Math.min(this.value(), 100)}%`);
-    })
+    } else {
+      Promise.resolve().then(() => {
+        this.#renderer.setStyle(this.progressRef.nativeElement, 'width', `${Math.min(this.value(), 100)}%`);
+      })
+    }
   });
 
   ngAfterViewInit(): void {
