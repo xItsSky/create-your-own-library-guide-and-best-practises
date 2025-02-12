@@ -10,7 +10,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@ng-doc/builder:application",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "project": "projects/my-funny-lib/ng-package.json"
           },
